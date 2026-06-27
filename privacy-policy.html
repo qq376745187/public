@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跨境合规体检助手 - 隐私政策</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f9fafb;
+      padding: 24px 16px;
+    }
+    .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 40px 32px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #111827; }
+    .updated { color: #6b7280; font-size: 13px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid #e5e7eb; }
+    h2 { font-size: 18px; margin: 28px 0 12px; color: #1f2937; }
+    p, li { font-size: 14px; color: #374151; margin-bottom: 10px; }
+    ul { padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    strong { color: #111827; }
+    .highlight { background: #fef3c7; padding: 2px 6px; border-radius: 4px; }
+    .contact { margin-top: 32px; padding: 16px 20px; background: #f3f4f6; border-radius: 8px; font-size: 13px; color: #6b7280; }
+    .footer { margin-top: 24px; text-align: center; font-size: 12px; color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>跨境合规体检助手 隐私政策</h1>
+    <div class="updated">最后更新：2025年6月1日</div>
+
+    <h2>1. 我们收集什么数据</h2>
+    <p><strong>不收集。</strong>本扩展不收集、不上传、不存储任何用户个人信息或商品数据。我们没有任何后端服务器。</p>
+
+    <h2>2. 用户输入的数据如何处理</h2>
+    <ul>
+      <li>用户粘贴的文本和上传的图片仅在本地浏览器中处理。</li>
+      <li><strong>文本违禁词扫描完全在本地完成</strong>，基于浏览器内置的违禁词库进行匹配，不发送到任何服务器。</li>
+      <li><strong>图片侵权检测</strong>和<strong>AI 深度分析</strong>、<strong>AI 替换文案生成</strong>功能需要调用 Google Gemini API，相关数据（文本内容、图片数据）会发送到 Google 服务器进行分析。</li>
+      <li>分析完成后，数据不会被本扩展保存，也不会发送到我们的服务器（因为我们没有服务器）。</li>
+      <li>用户可随时通过「清空」按钮清除当前检测内容，或通过卸载扩展清除所有本地数据。</li>
+    </ul>
+
+    <h2>3. API Key 的处理</h2>
+    <ul>
+      <li>用户自行输入的 Gemini API Key 存储在浏览器的 <span class="highlight">chrome.storage.local</span> 中，仅保存在用户本地设备。</li>
+      <li>API Key 仅在本扩展内部用于调用 Google Gemini API，不会发送到任何第三方。</li>
+      <li>用户可随时在扩展设置中修改或清除 API Key。</li>
+    </ul>
+
+    <h2>4. 第三方服务</h2>
+    <ul>
+      <li><strong>Google Gemini API</strong>：仅在用户使用图片检测、AI 深度分析或 AI 替换文案功能时调用。用户可在 Google 隐私政策中了解其数据处理方式：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+      <li>除上述服务外，本扩展不接入任何其他第三方服务，不进行任何数据埋点、统计分析或行为追踪。</li>
+    </ul>
+
+    <h2>5. 权限说明</h2>
+    <ul>
+      <li><strong>sidePanel</strong>：提供侧边栏操作界面。</li>
+      <li><strong>storage</strong>：在本地存储用户设置（API Key、所选平台）和违禁词库缓存。</li>
+      <li><strong>host_permissions（generativelanguage.googleapis.com）</strong>：调用 Gemini API 进行图片侵权分析与文案处理。</li>
+      <li><strong>optional_host_permissions（按需申请）</strong>：仅当用户主动添加图片 URL 进行检测时，才会申请访问对应图片地址的权限，用于读取图片数据。本扩展不主动访问任何网页。</li>
+    </ul>
+
+    <h2>6. 数据安全</h2>
+    <ul>
+      <li>本扩展不采集任何平台商品数据，不注入网页读取内容，法律风险最低。</li>
+      <li>所有本地存储的数据均在用户设备上，用户拥有完全控制权。</li>
+      <li>API Key 通过浏览器本地存储保管，不上传至任何中间服务器。</li>
+    </ul>
+
+    <h2>7. 数据删除</h2>
+    <p>所有数据存储在用户本地浏览器中，用户可随时通过以下方式删除：</p>
+    <ul>
+      <li>点击扩展内「清空」按钮清除当前检测内容；</li>
+      <li>在扩展设置中清除 API Key；</li>
+      <li>卸载扩展；</li>
+      <li>清除浏览器数据。</li>
+    </ul>
+
+    <h2>8. 儿童隐私</h2>
+    <p>本扩展面向跨境电商卖家等成年专业人士，不面向 18 岁以下未成年人。我们不会故意收集任何未成年人的个人信息。</p>
+
+    <h2>9. 免责声明</h2>
+    <p>本扩展提供的合规检测结果由 AI 辅助生成，仅供参考，不构成法律建议。实际上架合规性以平台审核结果为准。建议在重要决策前咨询专业律师。</p>
+
+    <div class="contact">
+      <strong>联系方式</strong><br>
+      如对本隐私政策有任何疑问，请联系：support@example.com（上架前替换为真实邮箱）
+    </div>
+
+    <div class="footer">
+      跨境合规体检助手 · 隐私政策 v1.0
+    </div>
+  </div>
+</body>
+</html>
